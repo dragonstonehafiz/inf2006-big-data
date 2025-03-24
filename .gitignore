@@ -1,6 +1,7 @@
 *.jsonl
-__pyache__/
+__pycache__/
 venv/
+*.pyc
 *.jar
 *.zip
 part-r-00000
