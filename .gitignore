@@ -1,6 +1,7 @@
-*.jsonl
 __pycache__/
 venv/
+output/
+*.jsonl
 *.pyc
 *.jar
 *.zip
