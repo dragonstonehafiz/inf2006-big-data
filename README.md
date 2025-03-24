@@ -1,2 +1,5 @@
-# inf2006-big-data
-INF2006 Big Data Project
+# Amazon Review Data Analysis
+
+## Dataset
+
+![Dataset Download Link](https://amazon-reviews-2023.github.io/)
