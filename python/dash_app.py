@@ -374,7 +374,7 @@ def update_brand_mentions(years_range):
     ]
     
     filtered_df["year_month"] = pd.to_datetime(filtered_df[["year", "month"]].assign(day=1))
-    mentions_by_month = filtered_df.groupby(pd.Grouper(key="year_month", freq="M"))[
+    mentions_by_month = filtered_df.groupby(pd.Grouper(key="year_month", freq="ME"))[
         ["mentions_xbox", "mentions_nintendo", "mentions_sony"]
     ].sum().reset_index()
     
@@ -426,7 +426,7 @@ def update_controller_sentiment(years_range):
     ]
     
     filtered_df["year_month"] = pd.to_datetime(filtered_df[["year", "month"]].assign(day=1))
-    sentiment_by_month = filtered_df.groupby([pd.Grouper(key="year_month", freq="M"), "sentiment"]).size().reset_index(name="count")
+    sentiment_by_month = filtered_df.groupby([pd.Grouper(key="year_month", freq="ME"), "sentiment"]).size().reset_index(name="count")
     
     fig = px.line(
         sentiment_by_month,
