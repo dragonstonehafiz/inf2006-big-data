@@ -31,29 +31,11 @@ To leverage Hadoop and Spark for cleaning, processing, and performing data visua
         * Clean and standardize text data (e.g., lowercase, remove punctuation, tokenization).
         * Convert data types as necessary.
         * Extract relevant features from the review text.
-    * Example Spark code snippet for reading a parquet file:
-        ```python
-        from pyspark.sql import SparkSession
-
-        spark = SparkSession.builder.appName("AmazonVideoGamesAnalysis").getOrCreate()
-
-        df = spark.read.parquet("hdfs://<namenode_host>:<namenode_port>/path/to/video_games_reviews.parquet")
-
-        df.show()
-        ```
 
 4.  **Data Processing and Feature Engineering:**
     * Perform sentiment analysis on review text using NLP libraries (e.g., Spark NLP or TextBlob).
     * Calculate review statistics (e.g., average rating, review length, number of reviews per product).
     * Aggregate data to analyze trends (e.g., ratings over time, popular keywords).
-    * Example spark code to calculate average rating.
-        ```python
-        from pyspark.sql.functions import avg
-
-        average_ratings = df.groupBy("product_id").agg(avg("star_rating").alias("average_rating"))
-
-        average_ratings.show()
-        ```
 
 5.  **Data Visualization:**
     * Use Spark's capabilities to aggregate and prepare data for visualization.
