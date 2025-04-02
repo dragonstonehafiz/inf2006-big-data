@@ -1,3 +1,5 @@
+// Word Done By [Muhammad Hafiz Bin Abdul Halim] 
+
 package AmazonReviews;
 
 import java.io.IOException;
@@ -8,9 +10,10 @@ import org.apache.hadoop.mapreduce.Reducer;
 
 public class AmazonReviewReducer extends Reducer<Text, IntWritable, Text, IntWritable> {
 	IntWritable totalIW = new IntWritable();
-	
+
 	@Override
-	public void reduce(Text key, Iterable<IntWritable> values, Context context) throws IOException, InterruptedException {
+	public void reduce(Text key, Iterable<IntWritable> values, Context context)
+			throws IOException, InterruptedException {
 		int total = 0;
 		for (IntWritable value : values) {
 			total += value.get();
@@ -20,4 +23,3 @@ public class AmazonReviewReducer extends Reducer<Text, IntWritable, Text, IntWri
 	}
 
 }
-
