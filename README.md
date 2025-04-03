@@ -14,6 +14,7 @@ To leverage Hadoop and Spark for cleaning, processing, and performing data visua
     * Navigate to the provided link.
     * Locate the "Video Games" category within the dataset.
     * Download the relevant dataset files (likely in Parquet or JSON format, depending on the available options).
+    * So long the jsonl follows the same format as the one on amazon you can use it on other datsets.
 
 ### **Project Structure:**
 
