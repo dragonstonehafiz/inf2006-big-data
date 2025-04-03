@@ -15,7 +15,17 @@ To leverage Hadoop and Spark for cleaning, processing, and performing data visua
     * Locate the "Video Games" category within the dataset.
     * Download the relevant dataset files (likely in Parquet or JSON format, depending on the available options).
     * So long the jsonl follows the same format as the one on amazon you can use it on other datsets.
-
+2. **Data Preprocessing:**
+    * Clean the data by removing any inconsistencies, null values, or duplicates.
+    * Normalize the data to ensure consistency across different fields.
+3. **Hadoop Setup**
+    * Configure the Hadoop environment by setting up necessary configuration files (e.g., core-site.xml, hdfs-site.xml).
+    * Upload the preprocessed dataset to the Hadoop Distributed File System (HDFS) as well the jar file that runs the Reducer, Driver and Mapper.
+4. **Spark Setup:**
+    * Configure the Hadoop environment by setting up necessary configuration files (e.g., core-site.xml, hdfs-site.xml).
+    * Load the dataset from HDFS into a Spark DataFrame.
+    * Perform data cleaning and transformation operations using Spark SQL/DataFrames.
+    * Aggregate and analyze the data to extract meaningful insights (e.g., average rating, sentiment analysis).
 ### **Project Structure:**
 
 #### **Java Folder:**
