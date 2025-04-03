@@ -26,6 +26,14 @@ To leverage Hadoop and Spark for cleaning, processing, and performing data visua
     * Load the dataset from HDFS into a Spark DataFrame.
     * Perform data cleaning and transformation operations using Spark SQL/DataFrames.
     * Aggregate and analyze the data to extract meaningful insights (e.g., average rating, sentiment analysis).
+5. **Machine Learning Analysis:**
+    * Use the processed data to train machine learning models for various analyses (e.g., sentiment analysis, predictive modeling).
+    * Implement the machine learning pipeline in a Jupyter Notebook (ml.ipynb).
+    * Evaluate and refine the models to improve accuracy and performance.
+6. **Data Visualization with Dash:**
+    * Set up a Dash application to visualize the insights extracted from the dataset.
+    * Create interactive visualizations (e.g., pie charts, line graphs, word clouds) to represent the data.
+    * Implement callbacks in Dash to make the visualizations dynamic and responsive to user inputs.
 ### **Project Structure:**
 
 #### **Java Folder:**
