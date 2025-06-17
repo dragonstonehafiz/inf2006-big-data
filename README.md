@@ -1,4 +1,5 @@
 ## Amazon Review Data Analysis: Video Games on Amazon
+![Diagram](assets/diagram.png)
 
 ### **Dataset:**
 We will be using the Amazon Reviews 2023 dataset, specifically focusing on the "Video Games" category.
